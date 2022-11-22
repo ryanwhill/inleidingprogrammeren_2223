@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Pokemon;
+    src: url(./fonts/Pokemon\ GB.ttf);
+}
+
+body {
+    background-image: url(./images/backgroundx.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+header {
+    position: fixed;
+    margin-top: 10px;
+    top: 0;
+    width: 100vw;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.playbar {
+    position: absolute;
+    margin-left: 850px;
+    margin-top: 200px;
+
+}
+
+.playbar01 {
+    position: absolute;
+    margin-left: 850px;
+    margin-top: 200px;
+}
+
+.playbar02 {
+    position: absolute;
+    margin-left: 850px;
+    margin-top: 200px;
+}
+
+.playbar03 {
+    position: absolute;
+    margin-left: 850px;
+    margin-top: 200px;
+}
+
+.playbarfull {
+    position: absolute;
+    margin-left: 850px;
+    margin-top: 200px;
+}
+
+.feedbar {
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 200px;
+}
+
+.mudkip01 {
+    position: absolute;
+    margin-top: 210px;
+    margin-left: 610px;
+}
+
+.playbutton {
+    position: absolute;
+    margin-left: 540px;
+    bottom: 100px;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #0091C7;
+    color: white;
+    font-family: Pokemon;
+}
+
+.feedbutton {
+    position: absolute;
+    bottom: 100px;
+    margin-left: 840px;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: grey; /*#EB9600*/
+    color: white;
+    font-family: Pokemon;
+}
+
+.petbutton {
+    position: absolute;
+    margin-left: 700px;
+    bottom: 100px;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #298836;
+    color: white;
+    font-family: Pokemon;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: dimgrey;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
