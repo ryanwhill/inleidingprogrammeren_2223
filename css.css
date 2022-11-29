@@ -31,30 +31,6 @@ header {
 
 }
 
-.playbar01 {
-    position: absolute;
-    margin-left: 850px;
-    margin-top: 200px;
-}
-
-.playbar02 {
-    position: absolute;
-    margin-left: 850px;
-    margin-top: 200px;
-}
-
-.playbar03 {
-    position: absolute;
-    margin-left: 850px;
-    margin-top: 200px;
-}
-
-.playbarfull {
-    position: absolute;
-    margin-left: 850px;
-    margin-top: 200px;
-}
-
 .feedbar {
     position: absolute;
     margin-left: 300px;
