@@ -4,13 +4,23 @@ var playbarImages = ["playbar01.png", "playbar02.png", "playbar03.png", "playbar
 
 var playKnop = document.querySelector('.playbutton');
 
-var playbarElement = document.querySelector('.playbar')
+var petKnop = document.querySelector('.petbutton');
 
-var random = Math.random() * playbarImages.length;
+var sleepKnop = document.querySelector('.sleepbutton')
 
-function logo()
+var playbarElement = document.querySelector('.playbar');
+
+var Mudkip = document.querySelector(".mudkip01");
 
 
+function playbarIncrease() {
+    playbarElement.src = "./images/playbar01.png"
+};
+playKnop.addEventListener("click", playbarIncrease)
 
+function mudkipGoesToSleep() {
+    Mudkip.src = "./images/mudkipsleep.png"
+};
+sleepKnop.addEventListener("click", mudkipGoesToSleep)
 
 
