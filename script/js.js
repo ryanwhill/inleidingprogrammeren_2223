@@ -1,6 +1,6 @@
 // array declaration
 var playbarImages = ["playbar01.png", "playbar02.png", "playbar03.png", "playbarfull.png"];
-var feedbarImages = ["feedbar01.png", "feedbar02.png", "feedbar03.png", "feedbarfull.png"]
+var feedbarImages = ["feedbar01.png", "feedbar02.png", "feedbar03.png", "feedbarfull.png"];
 // interaction element declaration
 var playKnop = document.querySelector('.playbutton');
 var feedKnop = document.querySelector('.feedbutton');
