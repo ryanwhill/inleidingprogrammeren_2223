@@ -32,7 +32,7 @@ feedKnop.addEventListener('click', function() {
     }
 });
 
-sleepKnop.addEventListener('click', function() {
+sleepKnop.addEventListener('click', function() {  
     Mudkip.src = "./images/mudkipsleep.png"
 });
 
@@ -47,3 +47,11 @@ evolveKnop.addEventListener('click', function() {
         return;
     }
 });
+
+evolveKnop.addEventListener('click', function() {
+   if (playCount === 3 && feedCount === 3) {
+   //verander achtergrond kleur van de evolve knop//
+   evolveKnop.classList.add("evolvebuttonunlocked");}
+});
+
+
