@@ -58,6 +58,21 @@ header {
     font-family: Pokemon;
 }
 
+.playbuttonlocked {
+    position: absolute;
+    margin-left: 440px;
+    bottom: 100px;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: grey;
+    border-color: grey ;
+    color: white;
+    font-family: Pokemon;
+}
+
 .feedbutton {
     position: absolute;
     margin-left: 590px;
@@ -69,6 +84,21 @@ header {
     padding-right: 40px;
     background-color: red;
     border-color:red ;
+    color: white;
+    font-family: Pokemon;
+}
+
+.feedbuttonlocked {
+    position: absolute;
+    margin-left: 590px;
+    bottom: 100px;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: grey;
+    border-color:grey ;
     color: white;
     font-family: Pokemon;
 }
