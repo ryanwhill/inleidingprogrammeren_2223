@@ -14,13 +14,11 @@ var input = document.querySelector("input");
 var H1 = document.querySelector("h1.description");
 var confirmButton = document.querySelector("button");
 var H2 = document.querySelector("h2");
+var evolveSound = document.querySelector(".evolvesound");
 
 // count declaration
 var playCount = 0;
 var feedCount = 0;
-var sleepCount = 0;
-var evoleState = false;
-
 
 // function declarations
 // event listeners
@@ -38,20 +36,24 @@ confirmButton.addEventListener('click', function () {
 
 //PLAY BUTTON FUNCTIES//
 
-playKnop.addEventListener('click', function () {                        //----//
-    if (playCount < 3) {                                                //----//
-        playCount++;                                                    //----//
-        playbarElement.src = './images/' + playbarImages[playCount];    //----//
-    }
+playKnop.addEventListener('click', function increasePlaybar () {                             //----//
+    if (playCount < 3) {                                                                     //----//
+        playCount++;                                                                         //----//
+        playbarElement.src = './images/' + playbarImages[playCount];                         //----//
+    } else {
+        return;                                                                              //return want we willen dat er niks verder gebeurt//
+    }    
 });
 
 //FEED BUTTON FUNCTIES//
 
-feedKnop.addEventListener('click', function () {                        //----//
-    if (feedCount < 3) {                                                //----//
-        feedCount++;                                                    //----//
-        feedbarElement.src = './images/' + feedbarImages[feedCount];    //----//
-    }
+feedKnop.addEventListener('click', function increaseFeedbar () {                             //----//
+    if (feedCount < 3) {                                                                     //----//
+        feedCount++;                                                                         //----//
+        feedbarElement.src = './images/' + feedbarImages[feedCount];                         //----//
+    } else {
+        return;                                                                              //return want we willen dat er niks verder gebeurt//
+    }    
 });
 
 feedKnop.addEventListener('click', function () {
@@ -59,42 +61,44 @@ feedKnop.addEventListener('click', function () {
         evolveKnop.classList.add('evolvebuttonunlocked')
         playKnop.classList.add("playbuttonlocked")
         feedKnop.classList.add("feedbuttonlocked")
-    }
+    } else {
+        return;                                                                              //return want we willen dat er niks verder gebeurt//
+    }    
 });
 
 //SLEEP BUTTON FUNCTIES//
 
-sleepKnop.addEventListener('click', function () {                       //Functie die er voor zorgt dat de eerste evolutie (Mudkip) gaat slapen door op de knop te klikken//
-    Mudkip.src = "./images/mudkipsleep.png"                             //Verandert het plaatje naar een slapende mudkip met behulp van een click//
+sleepKnop.addEventListener('click', function marshtompGoesToSleep () {                        
+    if (playCount === 3 && feedCount === 3) {                                                 
+        Mudkip.src = "./images/marshtompsleeping.png"                                    
+    } else {
+        return;                                                                              //return want we willen dat er niks verder gebeurt//
+    }    
 });
-
-sleepKnop.addEventListener('click', function () {                       //Functie die ervoor zorgt dat de tweede evolutie (Marshtomp) gaat slapen//
-    if (playCount === 3 && feedCount === 3) {                           //Als de playbar en feedbar biede vol zijn (gelijk aan de 3 afbeeldingen in de var feedbarImages)//
-        Mudkip.src = "./images/marshtompsleeping.png"                                                             //--------//
-    }
-})
 
 //EVOLVE BUTTON FUNCTIES//
 
-evolveKnop.addEventListener('click', function () {
-    if (playCount === 3 && feedCount === 3) {                           //Functie die ervoor zorgt dat wanneer je op de slaapknop klikt, de andere knoppen locked worden//                         
-        feedKnop.classList.add("feedbuttonlocked")                      //Er wordt een class toegevoegd aan de feedKnop//
-        playKnop.classList.add("playbuttonlocked")                      //Er wordt een class toegevoegd aan de playKnop//
-    }                                                           
-});
-
-evolveKnop.addEventListener('click', function () {                      //Functie die ervoor zorgt dat wanneer je op de evolve button klikt Mudkip evolueert naar Marshtomp//
-    // evolve button logic
-    if (playCount === 3 && feedCount === 3) {                           //Als de playbar en feedbar biede vol zijn (gelijk aan de 3 afbeeldingen in de var feedbarImages)//
-        // logic for evolve pokemon
-        Mudkip.src = "./images/marshtomp_evolve.png"                    //verander dan het plaatje van mudkip naar Marshtomp//
+evolveKnop.addEventListener('click', function changesButtonStatesAfterEvolve () {
+    if (playCount === 3 && feedCount === 3) {                                                                        
+        feedKnop.classList.add("feedbuttonlocked")                                            
+        playKnop.classList.add("playbuttonlocked")
+        sleepKnop.classList.add("sleepbuttunlocked")                                            
     } else {
-        return;                                                         //return want we willen dat er niks verder gebeurt//
+        return;                                                                              //return want we willen dat er niks verder gebeurt//
+    }                                                          
+});
+
+evolveKnop.addEventListener('click', function evolveMudkipIntoMarshtomp () {                
+    // evolve button logic
+    if (playCount === 3 && feedCount === 3) {                                                
+        // logic for evolve pokemon
+        Mudkip.src = "./images/marshtomp_evolve.png"
+        evolveSound.play();                                                                 
+    } else {
+        return;                                                                              //return want we willen dat er niks verder gebeurt//
     }
 });
 
-evolveKnop.addEventListener('click', function () { 
-    if (playCount === 3 && feedCount === 3) {                           //Als de playbar en feedbar biede vol zijn (gelijk aan de 3 afbeeldingen in de var feedbarImages)//
-                                                          //verander dan het plaatje van mudkip naar Marshtomp//
-    }
-});
+
+
+

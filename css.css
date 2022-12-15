@@ -149,28 +149,13 @@ button.description {
     padding-bottom: 5px;
     padding-left: 40px;
     padding-right: 40px;
-    background-color: #298836;
-    border-color: #298836;
-    color: white;
-    font-family: Pokemon;
-}
-
-.sleepbuttonlocked {
-    position: absolute;
-    margin-left: 740px;
-    bottom: 100px;
-    border-radius: 8px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    padding-left: 40px;
-    padding-right: 40px;
     background-color: grey;
     border-color: grey;
     color: white;
     font-family: Pokemon;
 }
 
-.wakebutton {
+.sleepbuttunlocked {
     position: absolute;
     margin-left: 740px;
     bottom: 100px;
@@ -179,44 +164,13 @@ button.description {
     padding-bottom: 5px;
     padding-left: 40px;
     padding-right: 40px;
-    background-color: #298836;
-    border-color: #298836;
-    color: white;
-    font-family: Pokemon;
-}
-
-.wakebuttonhidden {
-    display: none;
-    position: absolute;
-    margin-left: 740px;
-    bottom: 100px;
-    border-radius: 8px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    padding-left: 40px;
-    padding-right: 40px;
-    background-color: #298836;
+    background-color: #298836; 
     border-color: #298836;
     color: white;
     font-family: Pokemon;
 }
 
 .evolvebutton {
-    position: absolute;
-    bottom: 100px;
-    margin-left: 900px;
-    border-radius: 8px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    padding-left: 40px;
-    padding-right: 40px;
-    background-color: grey;
-    border-color: grey;
-    color: white;
-    font-family: Pokemon;
-}
-
-.evolvebuttonlocked {
     position: absolute;
     bottom: 100px;
     margin-left: 900px;
@@ -256,14 +210,4 @@ footer {
     color: white;
 }
 
-.confirmname {
-    position: absolute;
-}
-
-p {
-    position: absolute;
-}
-
-input {
-    position: absolute;
-}
+/*BRONNEN*/
