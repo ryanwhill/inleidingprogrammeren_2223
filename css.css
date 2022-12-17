@@ -35,9 +35,11 @@ h1.description {
 
 h2 {
     position: absolute;
+    font-size: medium;
     margin-top: 350px;
     margin-left: 50px;
     color: white;
+    font-family: Pokemon;
 }
 
 .h2hidden {
@@ -56,8 +58,14 @@ input {
 
 button.description {
     position: absolute;
+    text-align: center;
     margin-left: 200px;
     margin-top: 400px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Pokemon;
 }
 
 
@@ -142,7 +150,7 @@ button.description {
 
 .sleepbutton {
     position: absolute;
-    margin-left: 740px;
+    margin-left: 920px;
     bottom: 100px;
     border-radius: 8px;
     padding-top: 10px;
@@ -157,7 +165,7 @@ button.description {
 
 .sleepbuttunlocked {
     position: absolute;
-    margin-left: 740px;
+    margin-left: 920px;
     bottom: 100px;
     border-radius: 8px;
     padding-top: 10px;
@@ -173,7 +181,7 @@ button.description {
 .evolvebutton {
     position: absolute;
     bottom: 100px;
-    margin-left: 900px;
+    margin-left: 740px;
     border-radius: 8px;
     padding-top: 10px;
     padding-bottom: 5px;
@@ -188,7 +196,7 @@ button.description {
 .evolvebuttonunlocked {
     position: absolute;
     bottom: 100px;
-    margin-left: 900px;
+    margin-left: 740px;
     border-radius: 8px;
     padding-top: 10px;
     padding-bottom: 5px;
@@ -210,4 +218,3 @@ footer {
     color: white;
 }
 
-/*BRONNEN*/
